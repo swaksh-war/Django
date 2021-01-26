@@ -1,0 +1,26 @@
+{% extends 'main/base.html'%} 
+
+{% block title %} about {% endblock %} 
+{% block heading %} heading {% endblock %}
+
+
+{% block content %}
+
+<form method="get" action="/userprofile">
+
+  <label for="gname"> Game Name</label>
+  <br/>
+  <input type="text" id="gname" name="game" placeholder="CSGO"/>
+    
+  <br/>
+
+  <label for="hours">Hours Played</label><br />
+  <input type="number" id="hours" name="hoursplayed" placeholder="0" />
+  
+  <br/>
+    
+  <button type="submit">Submit</button>
+
+</form>
+
+{% endblock %}

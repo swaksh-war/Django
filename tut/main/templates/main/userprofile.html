@@ -1,0 +1,15 @@
+{% extends "main/base.html" %}
+
+{% block title %} User Profile {% endblock %}
+{% block heading %} User Profile {% endblock %}
+
+{% block content %}
+
+{% for x in djlist %}
+    
+    i played the {% if x.game == "Fortnite" %} tatti {%endif%} 
+    {{x.game}} for {{x.hoursplayed}} hrs.<br><hr> 
+    
+{% endfor %}
+
+{% endblock %}
